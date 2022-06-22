@@ -30,7 +30,7 @@
   };
 
   /* 核心功能 */
-  const jsonp = function jsonp(url, options) {
+  const jsonp = function jsonp(url, options){
     //初始化参数
     if(typeof url!=="string")throw new TypeError("url is not string");
     if(!isPlainObject(options))options={};
@@ -63,7 +63,7 @@
       script = document.createElement("script");
       script.src = url;
       script.onerror=()=>{
-        //请求失败
+        //请求失败 
         reject();
         clear();
       };

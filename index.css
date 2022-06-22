@@ -30,12 +30,25 @@
 .searchCont{
     width: 250px;
     border-top: none;
-    height: 100px;
+    height: 120px;
     border: 1px solid;
     position: absolute;
     display: none;
+    overflow: hidden;
 }
 
 .searchUL{
+    /* margin: 5px; */
+}
+
+.searchLI{
     margin: 5px;
+    height: 15px;
+    cursor: pointer;
+    /* background-color:lightpink;  */
+}
+
+.searchLI:hover{
+    background-color:lavender;
+    color: #4e6ef2;
 }
